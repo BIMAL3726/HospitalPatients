@@ -134,9 +134,9 @@ const PatientsRegister = () => {
             <span className="text-red-500">*</span>
           </span>
           <select name="registrationType" value={formData.registrationType} onChange={handleChange} required className="border p-2">
-            <option>NEW</option>
-            <option>OLD</option>
-            <option>Health Card</option>
+            <option value="NEW">NEW</option>
+            <option value="NEW">OLD</option>
+            <option value="NEW">Health Card</option>
           </select>
         </label>
         
@@ -176,9 +176,9 @@ const PatientsRegister = () => {
           <div className='flex gap-2'>
           <select name="prefix" value={formData.prefix} onChange={handleChange} required className="border p-2 w-2/4">
             <option value=""> Prefix</option>
-            <option>Mr</option>
-            <option>Mrs</option>
-            <option>Miss</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
           </select>
 
           <input name="name" placeholder='TYPE YOUR NAME' value={formData.name} onChange={handleChange} required className="border p-2 w-full" />
@@ -189,8 +189,8 @@ const PatientsRegister = () => {
           <span className="text-gray-700 font-medium">Sex<span className="text-red-500">*</span></span>
           <select name="sex" value={formData.sex} onChange={handleChange} required className="border p-2">
             <option value="">Select</option>
-            <option>Male</option>
-            <option>Female</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
           </select>
         </label>
 
@@ -222,14 +222,14 @@ const PatientsRegister = () => {
           <span className="text-gray-700 font-medium">Blood Group</span>
           <select name="bloodGroup" value={formData.bloodGroup} onChange={handleChange} className="border p-2">
             <option value="">Select</option>
-            <option>A+</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B-</option>
-            <option>AB+</option>
-            <option>AB-</option>
-            <option>O+</option>
-            <option>O-</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
           </select>
         </label>
 
@@ -349,7 +349,7 @@ const PatientsRegister = () => {
             <option value="CASUALY">CASUALY</option>
             <option value="CHEST MEDICINE">CHEST MEDICINE</option>
             <option value="CTVS">CTVS</option>
-            <option value="">DENTAL</option>
+            <option value="DENTAL">DENTAL</option>
             <option value="DERMATOLOGY">DERMATOLOGY</option>
             <option value="DIABETOLOGY">DIABETOLOGY</option>
             <option value="ENDOCRINOLOGY">ENDOCRINOLOGY</option>
@@ -415,7 +415,7 @@ const PatientsRegister = () => {
           <span className="text-gray-700 font-medium">Bill Type<span className="text-red-500">*</span></span>
           <select name="billType" value={formData.billType} onChange={handleChange} className="border p-2">
             <option value="">Select</option>
-            <option value="">Cash Bill</option>
+            <option value="Cash Bill">Cash Bill</option>
             </select>
         </label>
 
@@ -425,8 +425,8 @@ const PatientsRegister = () => {
           <input name="discount" placeholder='AMOUNT %' value={formData.discount} onChange={handleChange} className="border p-2" />
           <select name="discountReason" value={formData.discountReason} onChange={handleChange} className="border p-2">
             <option value="">Select Discount Reason</option>
-            <option value="">Reason 1</option>
-            <option value="">Reason 2</option>
+            <option value="Reason 1">Reason 1</option>
+            <option value="Reason 2">Reason 2</option>
         </select></div>
         </label>
         
@@ -434,8 +434,8 @@ const PatientsRegister = () => {
           <span className="text-gray-700 font-medium">Payment Mode<span className="text-red-500">*</span></span>
           <select name="paymentMode" value={formData.paymentMode} onChange={handleChange} className="border p-2">
             <option>Select</option>
-            <option>CASH</option>
-            <option>ONLINE</option>
+            <option value='CASH'>CASH</option>
+            <option value='ONLINE'>ONLINE</option>
           </select>
         </label>
         
