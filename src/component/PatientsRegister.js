@@ -103,7 +103,7 @@ const PatientsRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/register', formData);
+      await axios.post('https://hospitalpatients.onrender.com/api/register', formData);
       alert('Patient Registered');
       reset();
     } catch (err) {
